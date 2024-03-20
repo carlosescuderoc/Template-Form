@@ -1,0 +1,116 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.form {
+    border: 1px solid lightgrey;
+}
+
+.form-header{
+    text-align: left;
+}
+.form-footer{
+text-align: right;
+}
+
+.form-header, .form-footer {
+    background-color: lightgrey;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.form-body {
+    padding: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group > label {
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.payment-methods {
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.payment-method {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+
+
+.form-row:nth-of-type(4) .form-group:nth-of-type(2) {
+    display: flex;
+}
+
+
+.form-row:nth-of-type(4) .form-group:nth-of-type(2) > div:nth-of-type(1) {
+    margin-right: 10px;;
+}
+

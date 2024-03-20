@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <form action="#" method="post" novalidate class="form">
+
+            <div class="form-header">Payment form example</div>
+            <div class="form-body">
+                <div class="alert">Some fields are missing</div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="card">Card #</label>
+                        <input type="text" id="card" placeholder="XXXX XXXX XXXX XXXX" required pattern="\d{4} \d{4} \d{4} \d{4}">
+                    </div>
+                    <div class="form-group">
+                        <label for="cvc">CVC #</label>
+                        <input type="text" id="cvc" required pattern="\d{3}" placeholder="000">
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" required placeholder="Amount">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <label for="state">State</label>
+                            <select id="state" required>
+                                <option value="">Pick a state</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                            </select>
+
+                        </div>
+                        <div>
+                            <label for="postalCode">Postal Code</label>
+                            <input type="text" id="postalCode" required pattern="\d{5}" placeholder="">
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>We accept:</label>
+                        <div class="payment-methods">
+                            <label class="payment-method"><input type="radio" name="paymentMethod" value="visa" required checked>Visa</label>
+                            <label class="payment-method"><input type="radio" name="paymentMethod" value="mastercard" required>MasterCard</label>
+                            <label class="payment-method"><input type="radio" name="paymentMethod" value="paypal" required>PayPal</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder=""></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-footer">
+                <button type="reset" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+
+    </form>
+</div>
+</body>
+</html>
